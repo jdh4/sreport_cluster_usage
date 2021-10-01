@@ -38,7 +38,7 @@ $ sreport cluster AccountUtilizationByUser tree -t percent  | grep -E ' {35}'
     della  spia                                              1.74%    0.00%
 ```
 
-What does the sum of the columns not equal root? Need to eliminiate subgroups.
+Why does the sum of the columns not equal root? Need to eliminate subgroups.
 
 ```
 $ sreport cluster AccountUtilizationByUser tree  | grep -E ' {35}'
