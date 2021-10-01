@@ -6,6 +6,38 @@ $ sreport cluster AccountUtilizationByUser tree | grep -E ' {35}'
 $ sreport cluster AccountUtilizationByUser tree -t percent  | grep -E ' {35}'
 ```
 
+Seems stupid that root does not equal 100%:
+
+```
+$ sreport cluster AccountUtilizationByUser tree -t percent  | grep -E ' {35}'
+    della root                                              42.72%    0.00% 
+    della  astro                                             0.98%    0.00% 
+    della  cbe                                               0.48%    0.00% 
+    della  cee                                               1.31%    0.00% 
+    della  chem                                             13.84%    0.00% 
+    della  cses                                              0.01%    0.00% 
+    della  ee                                                6.26%    0.00% 
+    della  eeb                                               1.02%    0.00% 
+    della  geo                                               0.66%    0.00% 
+    della   geoclim                                          0.65%    0.00% 
+    della  jenkins                                           1.00%    0.00% 
+    della  mae                                               0.17%    0.00% 
+    della  molbio                                            1.20%    0.00% 
+    della  physics                                           4.06%    0.00% 
+    della  pni                                               0.94%    0.00% 
+    della  politics                                          0.03%    0.00% 
+    della  prism                                             3.17%    0.00% 
+    della  public                                            5.84%    0.00% 
+    della   cs                                               1.41%    0.00% 
+    della   econ                                             0.58%    0.00% 
+    della   genomics                                         1.22%    0.00% 
+    della   orfe                                             0.02%    0.00% 
+    della   pcts                                             2.44%    0.00% 
+    della   psychology                                       0.03%    0.00% 
+    della   socio                                            0.15%    0.00% 
+    della  spia                                              1.74%    0.00%
+```
+
 What does the sum of the columns not equal root? Need to eliminiate subgroups.
 
 ```
