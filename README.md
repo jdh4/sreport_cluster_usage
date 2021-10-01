@@ -75,3 +75,14 @@ $ sreport cluster AccountUtilizationByUser tree | grep -E ' {35}' | grep -v root
 $ sreport cluster AccountUtilizationByUser tree | grep -E ' {35}' | grep -v -E 'root|geoclim| cs |econ|genom|orfe|pcts|psych|socio' | awk -F' ' '{sum+=$3;} END{print sum;}'
 7450681
 ```
+
+```
+$ sreport -t hourper cluster Utilization Start=`date -d "last month" +%D` End=`date -d "this month" +%D`
+--------------------------------------------------------------------------------
+Cluster Utilization 2021-09-01T00:00:00 - 2021-09-30T23:59:59
+Usage reported in CPU Hours/Percentage of Total
+--------------------------------------------------------------------------------
+  Cluster            Allocated               Down         PLND Down                Idle             Reserved             Reported 
+--------- -------------------- ------------------ ----------------- ------------------- -------------------- -------------------- 
+    della      3536774(40.56%)      140182(1.61%)          0(0.00%)     1013627(11.62%)      4030057(46.21%)     8720640(100.00%) 
+```
