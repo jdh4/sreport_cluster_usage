@@ -6,7 +6,7 @@ $ sreport cluster AccountUtilizationByUser tree | grep -E ' {35}'
 $ sreport cluster AccountUtilizationByUser tree -t percent  | grep -E ' {35}'
 ```
 
-What does the sum of the columns not equal root?
+What does the sum of the columns not equal root? Need to eliminiate subgroups.
 
 ```
 $ sreport cluster AccountUtilizationByUser tree  | grep -E ' {35}'
@@ -39,4 +39,7 @@ $ sreport cluster AccountUtilizationByUser tree  | grep -E ' {35}'
 
 $ sreport cluster AccountUtilizationByUser tree | grep -E ' {35}' | grep -v root | awk -F' ' '{sum+=$3;} END{print sum;}'
 8582023
+
+$ sreport cluster AccountUtilizationByUser tree | grep -E ' {35}' | grep -v -E 'root|geoclim| cs |econ|genom|orfe|pcts|psych|socio' | awk -F' ' '{sum+=$3;} END{print sum;}'
+7450681
 ```
