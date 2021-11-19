@@ -88,3 +88,8 @@ Usage reported in CPU Hours/Percentage of Total
 --------- -------------------- ------------------ ----------------- ------------------- -------------------- -------------------- 
     della      3536774(40.56%)      140182(1.61%)          0(0.00%)     1013627(11.62%)      4030057(46.21%)     8720640(100.00%) 
 ```
+
+
+```
+$ sreport -v cluster AccountUtilizationByUser cluster=stellar accounts=cimes start=2021-01-01 end=now -t hours
+```
