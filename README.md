@@ -93,3 +93,7 @@ Usage reported in CPU Hours/Percentage of Total
 ```
 $ sreport -v cluster AccountUtilizationByUser cluster=stellar accounts=cimes start=2021-01-01 end=now -t hours
 ```
+
+```
+$ sreport user top start=2021-10-01 end=now TopCount=100 accounts=pppl -t hourper --tres=cpu
+```
