@@ -97,4 +97,6 @@ $ sreport -v cluster AccountUtilizationByUser cluster=stellar accounts=cimes sta
 ```
 $ sreport user top start=2021-10-01 end=now TopCount=100 accounts=pppl -t hourper --tres=cpu
 $ sreport user top start=2021-10-01 end=now TopCount=100 -t hourper --tres=cpu
+$ sreport cluster AccountUtilizationByUser cluster=della user=yaojunz start=8/31/20 end=8/31/21 -t hours
+$ sreport cluster AccountUtilizationByUser cluster=traverse start=2021-10-01 end=now -t hours
 ```
