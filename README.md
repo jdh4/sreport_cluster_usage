@@ -105,3 +105,9 @@ $ sreport cluster AccountUtilizationByUser cluster=traverse start=2021-10-01 end
  traverse           tromp       ql5   Qiancheng Liu         329        0 
 ```
 Why doesn't lsawade and ql5 not sum to 92667?
+
+```
+$ sreport user top start=2020-11-01 end=now TopCount=10000 -t hourper --tres=cpu | grep dmturner
+   tiger2  dmturner    David Turner             pni            cpu           111(0.00%) 
+   tiger2  dmturner    David Turner            cses            cpu            46(0.00%) 
+```
