@@ -124,3 +124,7 @@ Start with `sreport user top start=2020-11-01 end=now TopCount=10000 -t hourper 
 Use getent passwd to get the sponsor(s). Use checkgpu for utilization and gpu-hours. Check gpu-hours against sacct.
 
 Use ldapsearch on nobel to get position.
+
+```
+$ sreport user topusage start=2021-10-01 end=now TopCount=10000 format=Login,Account,Proper,Used -t hours -P -n
+```
