@@ -111,3 +111,9 @@ $ sreport user top start=2020-11-01 end=now TopCount=10000 -t hourper --tres=cpu
    tiger2  dmturner    David Turner             pni            cpu           111(0.00%) 
    tiger2  dmturner    David Turner            cses            cpu            46(0.00%) 
 ```
+
+Start with `sreport user top start=2020-11-01 end=now TopCount=10000 -t hourper --tres=cpu` to get netid, slurm account and usage. This command is best because it covers cases where user's have multiple slurm accounts. Generating the netids this way is better than ls -l /home or getent passwd because it remembers the netid even if the user is removed from the cluster.
+
+Use getent passwd to get the sponsor(s). Use checkgpu for utilization and gpu-hours. Check gpu-hours against sacct.
+
+Use ldapsearch on nobel to get position.
