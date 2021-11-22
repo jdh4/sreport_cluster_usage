@@ -1,4 +1,11 @@
-# sreport_cluster_usage
+# sreport
+
+```
+$ sreport cluster <REPORT> <OPTIONS>
+$ sreport job <REPORT> <OPTIONS>
+$ sreport reservation Utilization <OPTIONS>
+$ sreport user TopUsage <OPTIONS>
+```
 
 [https://github.com/OleHolmNielsen/Slurm_tools](https://github.com/OleHolmNielsen/Slurm_tools)
 
