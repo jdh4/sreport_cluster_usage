@@ -10,7 +10,7 @@ $ sreport user TopUsage <OPTIONS>
 [https://github.com/OleHolmNielsen/Slurm_tools](https://github.com/OleHolmNielsen/Slurm_tools)
 
 ```
-$ sreport cluster AccountUtilizationByUser tree
+$ sreport cluster AccountUtilizationByUser tree start=2021-01-01 end=2021-11-28
 $ sreport cluster AccountUtilizationByUser tree | grep -E ' {35}'
 $ sreport cluster AccountUtilizationByUser tree -t percent  | grep -E ' {35}'
 ```
