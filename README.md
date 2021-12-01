@@ -128,3 +128,9 @@ Use ldapsearch on nobel to get position.
 ```
 $ sreport user topusage start=2021-10-01 end=now TopCount=10000 format=Login,Account,Proper,Used -t hours -P -n
 ```
+
+Number of jobs:
+
+```
+$ sreport job sizesbyaccount users=smajeski start=2021-11-23T00:00:00 end=2021-11-29T23:59:59 PrintJobCount
+```
