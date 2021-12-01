@@ -133,4 +133,5 @@ Number of jobs:
 
 ```
 $ sreport job sizesbyaccount users=smajeski start=2021-11-23T00:00:00 end=2021-11-29T23:59:59 PrintJobCount
+$ sacct -u smajeski -S 2021-11-23T00:00:00 -E 2021-11-29T23:59:59 -X -n | wc -l
 ```
